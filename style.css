@@ -1,0 +1,21 @@
+.div-img img {
+    transition: transform .3s ease-in-out;
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.div-img:hover img {
+    transform: scale(2);
+}
+
+.div-img {
+    overflow: visible;
+    text-align: center;
+    padding-top: 20px;
+}
+
+body {
+    background-color: lightblue;
+}
