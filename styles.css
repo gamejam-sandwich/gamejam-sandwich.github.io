@@ -5,15 +5,15 @@
     padding-top: 20%;
 }
 
-img{
-    transition: transform .2s;
+.image-container img{
+    transition: transform .3s ease-in-out;
     width: 50px;
     height: 50px;
     margin: 0 auto;
 }
 
-img:hover{
-    transform:scale(1.5);
+.image-container:hover img{
+    transform:scale(1.1);
 }
 
 ul{
