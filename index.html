@@ -1,22 +1,47 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title> Test Page </title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>MEREDITH LO</h1>
-    <p>Fullstack <s>pancakes</s> developer</p>
-    <div class="div-img">
-        <img src="pancakes.png"/>
+
+    <main>
+        <h1>MEREDITH LO</h1>
+        <p>Fullstack <s>pancakes</s> developer</p>
+        <div class="div-img">
+            <!--Split into multiple pancakes, each pancake expands when hovered and displays texts/photos/links underneath-->
+            <img src="pancakes.png"/>
+        </div>
+    </main>
+
+    <div class="container">
+        <ul id="menu">
+            <a
+                class="menu-button icon-plus"
+                id="open-menu"
+                href="#menu"
+                title="Show navigation"
+            ></a>
+            <a
+                class="menu-button icon-minus"
+                href="#0"
+                title="Hide navigation"
+            ></a>
+            <li class="menu-item"><a href="index.html">Home</a></li>
+            <li class="menu-item"><a href="about.html">About</a></li>      
+            <li class="menu-item"><a href="projects/index.html">Projects</a></li>
+            <li class="menu-item"><a href="poems/index.html">Poems</a></li>
+            <li class="menu-item"><a href="pancakes/index.html">Pancakes</a></li>
+        </ul>
     </div>
-    <ul>
-        <li><a href="google.com">Home</a></li>
-        <li><a href="google.com">About</a></li>
-        <li><a href="google.com">Projects</a></li>
-        <li><a href="google.com">Poems</a></li>
-        <li><a href="google.com">Pancakes</a></li>
-    </ul>
+
+    <footer>
+        <p>&copy; 2026 pancake</p>
+    </footer>
 
 </body>
 </html>
