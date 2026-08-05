@@ -9,7 +9,7 @@ navLinks.forEach(link => {
         });
         navLinks.forEach(navLink => {
             navLink.classList.remove('active');
-        })
+        });
         link.classList.add('active');
         const visibleSection = document.getElementById(targetValue);
         visibleSection.classList.add('visible');

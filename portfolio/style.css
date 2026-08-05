@@ -64,6 +64,7 @@ section.visible {
 
 .skill {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 0.75rem;
     transition: transform 0.2s ease;
@@ -71,6 +72,22 @@ section.visible {
 
 .skill:hover {
     transform: scale(1.05);
+}
+
+.skill:hover ul {
+    display: list-item;
+    opacity: 1;
+}
+
+.skill ul {
+    flex-basis: 100%;
+    list-style: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.skill li {
+    list-style: cjk-ideographic;
 }
 
 li img {
