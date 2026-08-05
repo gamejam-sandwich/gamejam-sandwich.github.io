@@ -58,6 +58,21 @@ section.visible {
     display: block;
 }
 
+.job-field {
+    position: relative;
+    height: 500px;
+}
+
+.job-title {
+    --push-x: 0px;
+    --push-y: 0px;
+    position: absolute;
+    transform: perspective(400px) rotateX(25deg) rotate(-6deg)
+    translate(var(--push-x), var(--push-y));
+    transition: transform 0.4s ease-out;
+
+}
+
 .skills {
     list-style: none;
 }
