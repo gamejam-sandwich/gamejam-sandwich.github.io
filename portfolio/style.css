@@ -29,7 +29,7 @@ nav a:hover {
 }
 
 nav a.active {
-    background: #102a51;
+    background: #e6f0ff;
     font-weight: bold;
 }
 
@@ -38,5 +38,10 @@ main {
 }
 
 section {
+    display: none;
     padding: 1rem 2rem;
+}
+
+section.visible {
+    display: block;
 }
