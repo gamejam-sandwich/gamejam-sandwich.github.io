@@ -6,3 +6,37 @@ header {
     padding: 1rem 2rem;
     border-bottom: 1px solid salmon;
 }
+
+.layout {
+    display: flex;
+}
+
+nav {
+    width: 180px;
+    flex-shrink: 0;
+}
+
+nav a {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+    color: salmon;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background: #f0f0f0;
+}
+
+nav a.active {
+    background: #102a51;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+}
+
+section {
+    padding: 1rem 2rem;
+}
