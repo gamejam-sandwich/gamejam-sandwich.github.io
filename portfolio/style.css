@@ -1,19 +1,29 @@
 header {
     position: sticky;
+    width: 100%;
     top: 0;
+    overflow: hidden;
     background: white;
     z-index: 10;
     padding: 1rem 2rem;
     border-bottom: 1px solid salmon;
+    height: 100px;
+    box-sizing: border-box;
 }
 
-.layout {
+.box {
     display: flex;
+    flex-direction: row;
 }
 
 nav {
+    position: sticky;
+    top: 100px;
+    align-self: flex-start;
+    overflow: hidden;
     width: 180px;
     flex-shrink: 0;
+    padding-left: 0.5rem;
 }
 
 nav a {
@@ -35,13 +45,37 @@ nav a.active {
 
 main {
     flex: 1;
+    max-width: 900px;
 }
 
 section {
     display: none;
     padding: 1rem 2rem;
+    overflow-wrap: break-word;
 }
 
 section.visible {
     display: block;
+}
+
+img {
+    max-width: 320px;
+    height: auto;
+    display: block;
+}
+
+.bio {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+@media (max-width: 600px) {
+    .layout {
+        flex-direction: column;
+    }
+    nav {
+        width: 100%;
+    }
 }
