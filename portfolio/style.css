@@ -61,6 +61,23 @@ section.visible {
 .job-field {
     position: relative;
     height: 500px;
+    z-index: 1;
+}
+
+.job-field.blurred {
+    filter: blur(4px);
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    z-index: 20;
+}
+
+.overlay.visible {
+    display: block;
 }
 
 .job-title {
@@ -70,7 +87,31 @@ section.visible {
     transform: perspective(400px) rotateX(25deg) rotate(-6deg)
     translate(var(--push-x), var(--push-y));
     transition: transform 0.4s ease-out;
+}
 
+.detail-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 30;
+}
+
+.detail-card.visible {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: rgb(219, 219, 238);
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-img {
+    width: 100px;
 }
 
 .skills {

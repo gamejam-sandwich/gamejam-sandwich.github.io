@@ -41,3 +41,31 @@ document.querySelector('.job-field').addEventListener
         }
     });
 });
+
+
+
+titles.forEach(title => {
+    title.addEventListener('click', (event) => {
+        const role = title.dataset.role;
+        const org = title.dataset.org;
+        const desc = title.dataset.desc;
+        const url = title.dataset.img;
+        
+        document.querySelector('.card-role').textContent = role;
+        document.querySelector('.card-org').textContent = org;
+        document.querySelector('.card-desc').textContent = desc;
+        document.querySelector('.card-img').src = url;
+        
+
+        document.querySelector('.job-field').classList.add('blurred');
+        document.querySelector('.overlay').classList.add('visible');
+        document.querySelector('.detail-card').classList.add('visible');
+    });
+});
+
+close_btn = document.querySelector('.close-btn');
+close_btn.addEventListener('click', (event) => {
+    document.querySelector('.detail-card').classList.remove('visible');
+    document.querySelector('.job-field').classList.remove('blurred');
+    document.querySelector('.overlay').classList.remove('visible');
+})
