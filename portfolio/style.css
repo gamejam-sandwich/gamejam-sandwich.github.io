@@ -1,3 +1,11 @@
+:root { 
+    --paper: #EDE4CE;
+    --ink: #3A3226;
+    --sage: #5C6E4F;
+    --dusty-rose: #B08297;
+    --rule-line: #A8987C;
+}
+
 header {
     position: sticky;
     width: 100%;
@@ -89,6 +97,17 @@ section.visible {
     transition: transform 0.4s ease-out;
 }
 
+.collection-line {
+    height: 1px;
+    background: repeating-linear-gradient(
+        90deg,
+        var(--rule-line),
+        var(--rule-line) 3px,
+        transparent 3px,
+        transparent 7px
+    );
+}
+
 .detail-card {
     position: fixed;
     top: 50%;
@@ -96,6 +115,9 @@ section.visible {
     transform: translate(-50%, -50%);
     display: none;
     z-index: 30;
+    padding: 1.5rem;
+    max-width: 500px;
+    box-shadow: 0 8px 24px rgba (0,0,0,0.15);
 }
 
 .detail-card.visible {
