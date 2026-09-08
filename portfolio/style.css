@@ -1,9 +1,9 @@
 :root { 
-    --paper: #EDE4CE;
-    --ink: #3A3226;
-    --sage: #5C6E4F;
-    --dusty-rose: #B08297;
-    --rule-line: #A8987C;
+    --beige: #fff1e4;
+    --pink:#9d6c94;
+    --teal:#b2c0e1;
+    --green:#7078c2;
+    --dark-green:#352e5a;
 }
 
 header {
@@ -11,10 +11,10 @@ header {
     width: 100%;
     top: 0;
     overflow: hidden;
-    background: white;
+    background: var(--beige);
     z-index: 10;
     padding: 1rem 2rem;
-    border-bottom: 1px solid salmon;
+    border-bottom: 1px solid var(--dark-green);
     height: 100px;
     box-sizing: border-box;
 }
@@ -25,28 +25,28 @@ header {
 }
 
 body {
-    background: var(--paper);
-    color: var(--ink);
+    background: var(--beige);
+    color: var(--dark-green);
     font-family: Georgia, serif;
 }
 
-.specimen-list {
+.job-list {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     padding: 1rem 0;
 }
 
-.specimen {
+.job {
     display: flex;
     gap: 1.5rem;
     padding: 1.5rem;
     background: rgba(255, 255, 255, 0.25);
     border-radius: 4px;
-    border: 1px solid var(--rule-line);
+    border: 1px solid var(--teal);
 }
 
-.specimen-img {
+.job-img {
     width: 90px;
     height: 90px;
     object-fit: cover;
@@ -54,27 +54,27 @@ body {
     flex-shrink: 0;
 }
 
-.specimen-body {
+.job-body {
     flex: 1;
 }
 
-.specimen-role {
+.job-role {
     font-style: italic;
-    color: var(--ink);
+    color: var(--pink);
     margin: 4px 0 2px;
     font-size: 19px;
 }
 
-.specimen-org {
+.job-org {
     font-size: 12px;
-    color: var(--sage);
+    color: var(--green);
     font-family: 'Courier New', monospace;
     margin: 0;
 }
 
-.specimen-desc {
+.job-desc {
     font-size: 13px;
-    color: var(--ink);
+    color: var(--pink);
     opacity: 0.85;
     line-height: 1.6;
     margin: 12px 0 0;
@@ -84,18 +84,18 @@ body {
   height: 1px;
   background: repeating-linear-gradient(
     90deg,
-    var(--rule-line),
-    var(--rule-line) 3px,
+    var(--dark-green),
+    var(--dark-green) 3px,
     transparent 3px,
     transparent 7px
   );
 }
 
-.specimen-label {
+.job-label {
   font-size: 11px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--dusty-rose);
+  color: var(--pink);
 }
 
 .work-card {
@@ -119,15 +119,11 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   padding: 0.4rem 0.9rem;
-  border: 1px solid var(--rule-line);
-  border-radius: 20px;
-  background: transparent;
-  color: var(--sage);
 }
 
 .filter-btn.active {
-  background: var(--sage);
-  color: var(--paper);
+  background: var(--teal);
+  color: var(--beige);
 }
 
 nav {
@@ -144,7 +140,7 @@ nav a {
     display: block;
     padding: 0.5rem 0.75rem;
     text-decoration: none;
-    color: salmon;
+    color: var(--teal);
     border-radius: 6px;
 }
 
@@ -180,7 +176,7 @@ section.visible {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: var(--dusty-rose);
+    background: var(--pink);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -194,7 +190,7 @@ section.visible {
 .skill-tag {
     position: relative;
     background: #F5EFE0;
-    border: 1px solid var(--rule-line);
+    border: 1px solid var(--teal);
     border-radius: 3px;
     padding: 1.75rem 1.5rem;
     box-shadow: 2px 3px 6px rgba(58, 50, 38, 0.12);
@@ -215,7 +211,7 @@ section.visible {
 
 .tag-title {
     font-style: italic;
-    color: var(--ink);
+    color: var(--dark-green);
     font-size: 18px;
     margin-bottom: 8px;
 }
@@ -225,22 +221,28 @@ section.visible {
     padding: 0;
     margin: 10px 0 0;
     font-size: 13px;
-    color: var(--sage);
+    color: var(--green);
     font-family: 'Courier New', monospace;
     line-height: 1.9;
 }
 
 .bio {
     display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .bio img {
+    order: -1;
     max-width: 320px;
+    width: 100%;
     height: auto;
     display: block;
+    background: white;
+    padding: 12px 12px 40px 12px;
+    box-shadow: 0 8px 16px rgba(10, 51, 35, 0.25);
+    transform: rotate(-2deg);
 }
 
 @media (max-width: 600px) {
