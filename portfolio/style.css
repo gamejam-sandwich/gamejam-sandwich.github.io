@@ -19,6 +19,19 @@ header {
     box-sizing: border-box;
 }
 
+.header-inner {
+    position: relative;
+    display: inline-block;
+}
+
+.header-mascot {
+    position: absolute;
+    bottom: -16px;
+    right: -100px;
+    width: 48px;
+    z-index: 11;
+}
+
 .box {
     display: flex;
     flex-direction: row;
@@ -168,11 +181,11 @@ nav a {
 }
 
 nav a:hover {
-    background: #f0f0f0;
+    background: #f0e6dd;
 }
 
 nav a.active {
-    background: #e6f0ff;
+    background: #f2e1d2;
     font-weight: bold;
 }
 
