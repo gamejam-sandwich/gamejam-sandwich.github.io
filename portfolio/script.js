@@ -1,3 +1,8 @@
+/*
+*  navigates through each section of the portfolio by
+*  adding/removing the active & visible classes
+*  when one of the sections is clicked.
+*/
 const navLinks = document.querySelectorAll('nav a');
 navLinks.forEach(link => {
     link.addEventListener('click', (event) => {
@@ -15,7 +20,10 @@ navLinks.forEach(link => {
     });
 });
 
-
+/*
+*  filters the work samples when one of the corresponding
+*  buttons is clicked. Similar technique as used above.
+*/
 const filterBtns = document.querySelectorAll('.filter-btn');
 filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -32,4 +40,17 @@ filterBtns.forEach(btn => {
             };
         });
     });
+});
+
+/*
+*   hopefully a temporary popup to tell users I'm being a bum
+*/
+const popup = document.querySelector('.popup-wrapper');
+const close = document.querySelector('.popup-close');
+document.addEventListener('DOMContentLoaded', () => {
+    popup.style.display = 'block;'
+});
+
+close.addEventListener('click', () => {
+    popup.style.display = 'none';
 });
