@@ -43,12 +43,12 @@ filterBtns.forEach(btn => {
 });
 
 /*
-*   hopefully a temporary popup to tell users I'm being a bum
+*   a temporary popup to tell users I'm being a bum
 */
 const popup = document.querySelector('.popup-wrapper');
 const close = document.querySelector('.popup-close');
 document.addEventListener('DOMContentLoaded', () => {
-    popup.style.display = 'block;'
+    popup.style.display = 'block';
 });
 
 close.addEventListener('click', () => {

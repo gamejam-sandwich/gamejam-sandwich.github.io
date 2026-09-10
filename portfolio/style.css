@@ -53,17 +53,11 @@ header {
     position: relative;
 }
 
-.popup a {
-    background: crimson;
-    color: white;
+.popup-close {
+    background: var(--green);
+    color: var(--beige);
     text-decoration: none;
     padding: 6px 10px;
-}
-
-.popup-close {
-    position: absolute;
-    top: 5px;
-    right: 8px;
     cursor: pointer;
 }
 
