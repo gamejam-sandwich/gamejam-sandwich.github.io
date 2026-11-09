@@ -1,7 +1,7 @@
 :root { 
     --beige: #fff1e4;
     --pink:#9d6c94;
-    --teal:#b2c0e1;
+    --teal:#a2b2d8;
     --green:#7078c2;
     --dark-green:#352e5a;
 }
@@ -303,6 +303,11 @@ section.visible {
     background: white;
     padding: 12px 12px 40px 12px;
     box-shadow: 0 8px 16px rgba(10, 51, 35, 0.25);
+    transform: rotate(-2deg);
+}
+
+.caption {
+    order: -1;
     transform: rotate(-2deg);
 }
 
