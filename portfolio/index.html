@@ -1,52 +1,23 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pancake Portfolio</title>
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <button class="home">MEREDITH LO</button>
-    
-    <div class="stack">
-        <button class="pancake" data-target="noun" style="--n: 0">
-            <!-- data-target stores custom private data, n: 0 defines CSS var inline-->
-            <span class="label">noun</span>
-        </button>
-        <button class="pancake" data-target="verb" style="--n: 1">
-            <span class="label">verb</span>
-        </button>
-        <button class="pancake" data-target="projects" style="--n: 2">
-            <span class="label">projects</span>
-        </button>
-        <button class="pancake" data-target="skills" style="--n: 3">
-            <span class="label">skills</span>
-        </button>
-        <button class="pancake" data-target="me" style="--n: 4">
-            <span class="label">me</span>
-        </button>
+    <div class="big">
+        <div class="stack">
+            <div class="pancake">
+                <img class="pancake-img" src="../visuals/penceke.png" width="100" height="50">
+                <span class="label">noun</span>
+            </div>
+            <div class="pancake">
+                <img class="pancake-img" src="../visuals/penceke.png" width="100" height="50">
+                <span class="label">verb</span>
+            </div>
+        </div>
     </div>
-
-    <main class="content">
-        <section id="noun">
-            <span>my work experience</span>
-        </section>
-
-        <section id="verb">
-            <span>experience my work</span>
-        </section>
-
-        <section id="projects">
-            <span>things im working on</span>
-        </section>
-
-        <section id="skills">
-            <span>im working on things</span>
-        </section>
-
-        <section id="me">
-            <span>a roundabout me</span>
-        </section>
-    </main>
-
     <script src="script.js"></script>
 </body>

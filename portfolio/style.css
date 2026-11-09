@@ -1,6 +1,8 @@
 body {
     background: #fff;
     color: #2b2b2b;
+    height: 100vh;
+    width: 100vw;
 }
 
 .home {
@@ -8,22 +10,37 @@ body {
     background-color: #a9a9a9;
 }
 
+.big {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .stack {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    translate: -50% -50%;
-    width: 360px;
-    height: 440px;
-    --gap: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    transition: gap 0.5s ease;
+}
+
+.stack:hover {
+    gap: 1.5rem;
 }
 
 .pancake {
-    position: absolute;
-    top: calc(50% + (var(--n) - 2) * var(--gap));
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
 
-    border: 0;
-    background: none;
-    cursor: pointer;
-    padding: 0;
+.pancake:hover {
+    transition: width 0.5s;
+}
+
+.label {
+
 }
